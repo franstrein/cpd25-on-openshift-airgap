@@ -36,8 +36,16 @@ Run the following command on Master1 node of the cluster. Master1 node usually i
 
 <b>Note Frans:</b> On the Bastion node the "oc" command is not found ("oc get pods"). Fix that by installing oc client:
 
-```In Open Shift Web Console, signin and go in topright menu to OC Command line Tools```
+```In Open Shift Web Console, signin and go in topright menu to OC Command line Tools
+Download the 3.11.153 Open Shift Client, following instructions from https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli
+Move file to /usr/local/bin on Bastion Node
+Unzip with tar -xvzf oc-3.11.153-linux.tar.gz t
+now you can login with oc to the Master Node:
+ oc login https://cpd-workshop1-master-01.demo.ibmcloudpack.com:8443
+ Accept insecure connection.
+Credentials: ocadmin/ocadmin
 
+```
 
 
 ## 2. Expose the Docker registry to be accessed outside of the cluster nodes
