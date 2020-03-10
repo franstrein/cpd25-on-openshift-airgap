@@ -33,7 +33,7 @@
 Run the following command on Master1 node of the cluster. Master1 node usually installed with "oc" openshift client tool.
 
 ```oc adm policy add-cluster-role-to-user cluster-admin ocadmin```
-<b>Note Frans:</b> On the Bastion node the "oc" command is not found ("oc get pods") Fix that by installing oc client:
+<b>Note Frans:</b> On the Bastion node the "oc" command is not found ("oc get pods"). Fix that by installing oc client:
 
 In Open Shift Web Console, signin and go in topright menu to OC Command line Tools
 
